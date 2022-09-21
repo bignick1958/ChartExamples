@@ -14,4 +14,5 @@ window.title('My Python calculator')
 
 
 # щапусск цикла
+
 window.mainloop()
