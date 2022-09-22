@@ -9,7 +9,7 @@ def do_close():
 
 # создание главного окна программы
 window = tk.Tk()
-window.geometry("450x450")
+window.geometry("450x550")
 window['bg'] = '#8fffff'
 window.title('Примеры построения графиков')
 
