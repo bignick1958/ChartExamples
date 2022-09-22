@@ -33,12 +33,46 @@ btn_chart2 = tk.Button(window, text='График 2',  font=('Helvetica', 12, 'b
 btn_chart2.place(x=40 , y=165, width=90, height=30)
 
 lbl_chart2 = tk.Label(window, text='Нормальное распределение', bg='#8fffff', font=('Helvetica', 10))
-lbl_chart2.place(x= 170, y=172)
+lbl_chart2.place(x= 170, y=162)
 
+# добавление кнопки и метки для графика 3
+btn_chart3 = tk.Button(window, text='График 3',  font=('Helvetica', 12, 'bold'), command=chart2.plot_chart)
+btn_chart3.place(x=40 , y=205, width=90, height=30)
+
+lbl_chart3 = tk.Label(window, text='Нормальное распределение - 3 ГРАФИКА', bg='#8fffff', font=('Helvetica', 10))
+lbl_chart3.place(x= 170, y=202)
+
+# добавление кнопки и метки для графика 4
+btn_chart4 = tk.Button(window, text='График 4',  font=('Helvetica', 12, 'bold'), command=chart2.plot_chart)
+btn_chart4.place(x=40 , y=245, width=90, height=30)
+
+lbl_chart4 = tk.Label(window, text='Описание графика', bg='#8fffff', font=('Helvetica', 10))
+lbl_chart4.place(x= 170, y=242)
+
+# добавление кнопки и метки для графика 5
+btn_chart5 = tk.Button(window, text='График 5',  font=('Helvetica', 12, 'bold'), command=chart2.plot_chart)
+btn_chart5.place(x=40 , y=285, width=90, height=30)
+
+lbl_chart5 = tk.Label(window, text='Описание графика', bg='#8fffff', font=('Helvetica', 10))
+lbl_chart5.place(x= 170, y=282)
+
+# добавление кнопки и метки для графика 6
+btn_chart6 = tk.Button(window, text='График 6',  font=('Helvetica', 12, 'bold'), command=chart2.plot_chart)
+btn_chart6.place(x=40 , y=325, width=90, height=30)
+
+lbl_chart6 = tk.Label(window, text='Описание графика', bg='#8fffff', font=('Helvetica', 10))
+lbl_chart6.place(x= 170, y=322)
+
+# добавление кнопки и метки для графика 7
+btn_chart7 = tk.Button(window, text='График 7',  font=('Helvetica', 12, 'bold'), command=chart2.plot_chart)
+btn_chart7.place(x=40 , y=365, width=90, height=30)
+
+lbl_chart7 = tk.Label(window, text='Описание графика', bg='#8fffff', font=('Helvetica', 10))
+lbl_chart7.place(x= 170, y=362)
 
 # добавление кнопки закрытия
 btn_close = tk.Button(window, text="Закрыть", font=('Bahnschrift', 12, 'bold'), command=do_close)
-btn_close.place(x=330, y=400, width=90, height=30)
+btn_close.place(x=330, y=500, width=90, height=30)
 
 # запуск цикла
 window.mainloop()
