@@ -1,27 +1,21 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+import seaborn as sns
 
 # данные для графика 2  
-def plot_chart2():
-    mean = 0
-    sigma = 1
-    mean2 = 1
-    sigma2 = 2
-    mean3 = -2
-    sigma3 = 0.7
+def plot_chart():
+    sns.set()
     
-    x= np.arange(-7, 7, 0.01)
-    f= np.exp(-np.square((x-mean)/sigma)/2)/(np.sqrt(2*np.pi)*sigma)
-    f2= np.exp(-np.square((x-mean2)/sigma2)/2)/(np.sqrt(2*np.pi)*sigma2)
-    f3= np.exp(-np.square((x-mean3)/sigma3)/2)/(np.sqrt(2*np.pi)*sigma3)
+    np.random.seed(33)
+    normal_data_a = np.random.normal(size = 500, loc = 100, scale = 10)
     
-    fig, ax = plt.subplots()
-    ax.plot(x, f)
-    ax.plot(x, f2)
-    ax.plot(x, f3)
-
-    ax.set(xlabel='X', ylabel='Y',
-           title='Нормальное распределение')
-    ax.grid()
+    df_normal_a = pd.DataFrame(data = normal_data_a, columns = ['score']).assign(group = 'Group A')
+    
+    sns.histplot(data = df_normal_a
+                    , x = 'score'
+                    , bins = 50
+                    )
+    
     plt.show()
     
