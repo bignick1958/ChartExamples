@@ -23,8 +23,9 @@ def plot_chart():
     
 # данные для графика 5  
 def plot_chart2():
-    sns.set()
-    sns.set_style('whitegrid', {'ytick.color'         : '.12'})
+    #sns.set()
+    sns.color_palette (n_colors = 16, desat = .90)
+    sns.set_style('whitegrid', {'ytick.color'         : '.10'})
     
     
     
